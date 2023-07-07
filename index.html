@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Recruitment Solution - Candidate Search</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a class="nav-link" id="home">Home</a></li>
+                <li><a class="nav-link" class="active">Candidate Search</a></li>
+                <li><a class="nav-link">Contact</a></li>
+                <li><a class="nav-link">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="search">
+        <div class="search-form">
+            <input type="text" id="locationInput" placeholder="Location">
+            <input type="text" id="jobRoleInput" placeholder="Job Role">
+            <button id="searchButton">Search</button>
+        </div>
+    </section>
+
+    <section class="listing">
+        <h2>Search Results</h2>
+        <ul id="candidateList"></ul>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Recruitment Solution. All rights reserved.</p>
+    </footer>
+
+    <script src="./js/script.js"></script>
+    <script src="./js/home.js"></script>
+</body>
+
+</html>
