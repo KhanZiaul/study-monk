@@ -66,8 +66,8 @@ function displayCandidates(candidates) {
             <div class="card-info">
             <img class="search-card-imag" src=${candidate.image} alt="">
              <h3>Name : ${candidate.name}</h3>
-             <h4>Job Role : ${candidate.jobRole} </h4>
-             <h4>Location : ${candidate.location}</h4>
+             <h3>Job Role : ${candidate.jobRole} </h3>
+             <h3>Location : ${candidate.location}</h3>
             </div>
              <button class="button" role="button"><span class="text">Hire Candidate</span></button>
             </div>
@@ -75,12 +75,6 @@ function displayCandidates(candidates) {
             `;
             candidateList.appendChild(candidateItem);
         });
-        // } else {
-        //     candidates.forEach(candidate => {
-        //         const candidateItem = document.createElement('li');
-        //         candidateItem.textContent = `${candidate.name} - ${candidate.location} - ${candidate.jobRole}`;
-        //         candidateList.appendChild(candidateItem);
-        //     });
     }
 }
 

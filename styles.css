@@ -1,13 +1,13 @@
 header {
   background-color: #333;
   color: #fff;
-  padding: 10px 0;
+  padding: 15px 0;
 }
 
 nav ul {
   list-style: none;
   margin: 0;
-  padding: 0;
+  padding: 10px;
   display: flex;
   justify-content: center;
 }
@@ -20,6 +20,13 @@ nav ul li a {
   color: #fff;
   text-decoration: none;
   padding: 5px 10px;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+nav ul li a:hover {
+  color: #ffcc00;
+  font-weight: 500;
 }
 
 nav ul li a.active {
@@ -29,7 +36,7 @@ nav ul li a.active {
 /* Search Section Styles */
 .search {
   background-color: #f1f1f1;
-  padding: 20px;
+  padding: 60px;
 }
 
 .search-form {
@@ -71,7 +78,7 @@ footer {
   background-color: #333;
   color: #fff;
   text-align: center;
-  padding: 20px 0;
+  padding: 30px 0;
 }
 
 .nav-link {
@@ -88,6 +95,12 @@ footer {
   border: 1px solid #dec802;
   padding: 20px;
   border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+}
+
+.card:hover {
+  transform: translateY(10px);
 }
 
 .card-imag {
@@ -108,28 +121,28 @@ footer {
   align-items: center;
   justify-content: space-between;
   gap: 50px;
-  border: 1px solid #000000;
+  border: 1px solid #333;
   padding: 20px;
   border-radius: 10px;
   margin-bottom: 30px;
   margin-top: 60px;
 }
 
-.card-info{
+.card-info {
   display: flex;
   align-items: center;
   gap: 50px;
 }
 
 .button {
-  background-color: #111827;
+  background-color: #333;
   border: 1px solid transparent;
   border-radius: .75rem;
   box-sizing: border-box;
   color: #FFFFFF;
   cursor: pointer;
   flex: 0 0 auto;
-  font-family: "Inter var",ui-sans-serif,system-ui,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+  font-family: "Inter var", ui-sans-serif, system-ui, -apple-system, system-ui, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-size: 1.125rem;
   font-weight: 600;
   line-height: 1.5rem;
@@ -138,7 +151,7 @@ footer {
   text-decoration: none #6B7280 solid;
   text-decoration-thickness: auto;
   transition-duration: .2s;
-  transition-property: background-color,border-color,color,fill,stroke;
+  transition-property: background-color, border-color, color, fill, stroke;
   transition-timing-function: cubic-bezier(.4, 0, 0.2, 1);
   user-select: none;
   -webkit-user-select: none;
@@ -160,4 +173,25 @@ footer {
   .button {
     padding: .75rem 1.5rem;
   }
+}
+
+#locationInput {
+  width: 250px;
+  background: #fff;
+  color: #a3a3a3;
+  font: inherit;
+  box-shadow: 0 6px 10px 0 rgba(0, 0, 0, .1);
+  border: 0;
+  outline: 0;
+  padding: 15px 10px;
+}
+#jobRoleInput {
+  width: 250px;
+  background: #fff;
+  color: #a3a3a3;
+  font: inherit;
+  box-shadow: 0 6px 10px 0 rgba(0, 0, 0, .1);
+  border: 0;
+  outline: 0;
+  padding: 15px 10px;
 }
