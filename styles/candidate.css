@@ -75,7 +75,8 @@ button {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     align-items: center;
-    justify-content: space-between;
+    margin-left: 5px;
+    margin-right: 5px;
     gap: 30px;
     padding: 10px;
     border-radius: 10px;
@@ -95,27 +96,46 @@ button {
     border-radius: 50%;
 }
 
-.candidate-details{
+.candidate-details {
     display: flex;
     flex-direction: column;
     gap: 10px;
 }
-.candidate-first-details{
+
+.candidate-first-details {
     display: flex;
     align-items: center;
     gap: 10px;
 }
 
-.candidate-second-details{
+.candidate-second-details {
     display: flex;
     align-items: center;
     gap: 20px;
     font-weight: 600;
+    margin-top: 7px;
+    margin-bottom: 7px;
 }
 
-.job-role{
-    color:brown;
+.candidate-name {
+    margin-top: 10px;
+}
+
+.job-role {
+    color: brown;
     font-weight: 300;
+}
+
+.candidate-salary {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.candidate-location {
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
 
 .card-info {
@@ -172,10 +192,30 @@ button {
         gap: 20px;
     }
 
+    .candidate-details {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .candidate-first-details {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .candidate-second-details {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        font-weight: 600;
+        margin-top: 7px;
+        margin-bottom: 7px;
+    }
+
     .card-imag {
         width: 100%;
         height: auto;
-        max-width: 350px;
         border-radius: 5px;
         margin: auto;
     }
@@ -207,6 +247,23 @@ button {
     }
 
     #jobRoleInput {
+        width: 100%;
+    }
+
+    .card {
+        grid-template-columns: 1fr;
+        width: 100%;
+        margin-left: 2px;
+        margin-right: 2px;
+        gap: 20px;
+    }
+
+    .candidate-first-details {
+        flex-direction: column;
+        align-items: start;
+    }
+
+    .button {
         width: 100%;
     }
 
