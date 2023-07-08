@@ -9,7 +9,7 @@
   font-family: 'Poppins', sans-serif;
 }
 
-/* nav style */
+/* nav styles */
 
 header {
   background-color: #19302E;
@@ -58,9 +58,9 @@ nav ul li a.active {
   cursor: pointer;
 }
 
-/* Hero Section Styles */
+/* hr section styles */
 
-.hero {
+.hr {
   background-image: url('https://images.unsplash.com/photo-1606159068539-43f36b99d1b2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=859&q=80');
   background-size: cover;
   background-position: center;
@@ -69,18 +69,18 @@ nav ul li a.active {
   align-items: center;
 }
 
-.hero-content {
+.hr-content {
   text-align: center;
   color: white;
   margin: 0 auto 0 auto;
 }
 
-.hero h1 {
+.hr h1 {
   font-size: 30px;
   margin-bottom: 20px;
 }
 
-.hero p {
+.hr p {
   font-size: 14px;
   margin-bottom: 30px;
   margin-left: 10px;
@@ -95,61 +95,63 @@ nav ul li a.active {
   border-radius: 5px;
 }
 
-.features {
+/* key-features section styles */
+
+.key-features {
   background-color: #f1f1f1;
   padding: 50px 0;
   text-align: center;
 }
 
-.features h2 {
+.key-features {
   font-size: 28px;
   margin-bottom: 30px;
 }
 
-.feature {
+.key-features {
   margin-bottom: 30px;
 }
 
-.feature i {
+.key-features i {
   font-size: 40px;
   margin-bottom: 20px;
   color: #333;
 }
 
-.feature h3 {
+.key-features h3 {
   font-size: 20px;
   margin-bottom: 10px;
 }
 
-.feature p {
+.key-features p {
   font-size: 16px;
 }
 
-/* Benefits Section Styles */
+/* hr-benefits section styles */
 
-.benefits {
+.hr-benefits {
   padding: 50px 0;
   text-align: center;
 }
 
-.benefits h2 {
+.hr-benefits h2 {
   font-size: 28px;
   margin-bottom: 30px;
 }
 
-.benefits ul {
+.hr-benefits ul {
   list-style: disc;
   margin: 0 auto;
   max-width: 600px;
   text-align: left;
 }
 
-.benefits li {
+.hr-benefits li {
   font-size: 16px;
   margin-bottom: 10px;
 }
 
-/* footer */
+/* footer styles*/
 
 .main-footer {
   padding: 70px 0;
@@ -233,6 +235,8 @@ footer a {
   padding: 5px 0;
 }
 
+/* Mobile Responsiveness */
+
 @media screen and (max-width:768px) {
   .main-footer {
     padding: 20px;
@@ -248,29 +252,41 @@ footer a {
     flex-direction: column;
   }
 
-  .hero h1 {
+  .hr h1 {
     font-size: 20px;
-    color: #0b0000;
   }
 
-  .hero p {
+  .hr p {
     text-align: center;
-    color: #0b0000;
   }
 
-  .benefits li {
+  .key-features {
     margin-left: 10px;
     margin-right: 10px;
   }
 
-  .features {
-    margin-left: 10px;
-    margin-right: 10px;
+  .hr-benefits {
+    padding: 50px 0;
+    text-align: center;
   }
 
-}
+  .hr-benefits h2 {
+    font-size: 28px;
+    margin-bottom: 30px;
+  }
 
-@media (max-width: 480px) {
+  .hr-benefits ul {
+    max-width: 100%;
+    text-align: left;
+    margin-left: 35px;
+    margin-right: 20px;
+  }
+
+  .hr-benefits li {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+
   .main-footer {
     grid-template-columns: 1fr;
   }
