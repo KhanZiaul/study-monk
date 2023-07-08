@@ -9,7 +9,7 @@ document.getElementById('home').addEventListener('click',function(){
 
 document.getElementById('login').addEventListener('click',function(){
 
-    location.href = 'login.html';
+    location.href = 'loginRegister.html';
 });
 
 // Login button location setup
