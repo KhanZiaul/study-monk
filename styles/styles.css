@@ -61,7 +61,7 @@ nav ul li a.active {
 /* Hero Section Styles */
 
 .hero {
-  background-image: url('https://images.unsplash.com/photo-1529400971008-f566de0e6dfc?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80');
+  background-image: url('https://images.unsplash.com/photo-1606159068539-43f36b99d1b2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=859&q=80');
   background-size: cover;
   background-position: center;
   height: 400px;
@@ -71,6 +71,8 @@ nav ul li a.active {
 
 .hero-content {
   text-align: center;
+  color: white;
+  margin: 0 auto 0 auto;
 }
 
 .hero h1 {
@@ -81,6 +83,7 @@ nav ul li a.active {
 .hero p {
   font-size: 14px;
   margin-bottom: 30px;
+  margin-left: 10px;
 }
 
 .btn {
@@ -123,6 +126,7 @@ nav ul li a.active {
 }
 
 /* Benefits Section Styles */
+
 .benefits {
   padding: 50px 0;
   text-align: center;
@@ -242,6 +246,26 @@ footer a {
 
   nav {
     flex-direction: column;
+  }
+
+  .hero h1 {
+    font-size: 20px;
+    color: #0b0000;
+  }
+
+  .hero p {
+    text-align: center;
+    color: #0b0000;
+  }
+
+  .benefits li {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  
+  .features {
+    margin-left: 10px;
+    margin-right: 10px;
   }
 
 }

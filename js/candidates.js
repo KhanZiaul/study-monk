@@ -4,7 +4,7 @@ const searchButton = document.getElementById('searchButton');
 const candidateList = document.getElementById('candidateList');
 
 const candidates = [
-    { name: 'Jane', location: 'San Francisco', jobRole: 'UI/UX Designer', 'image': 'https://images.unsplash.com/photo-1554126807-6b10f6f6692a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80' },
+    { name: 'Jane', location: 'San Francisco', jobRole: 'UI/UX Designer', 'image': 'https://images.unsplash.com/photo-1554126807-6b10f6f6692a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80' , salary : '$100/months' },
     { name: 'Alex', location: 'London', jobRole: 'Project Manager', 'image': 'https://images.unsplash.com/photo-1507438222021-237ff73669b5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1373&q=80' },
     { name: 'John', location: 'New York', jobRole: 'UI/UX Designer', 'image': 'https://images.unsplash.com/photo-1513959663939-eb7424f0e121?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80' },
     { name: 'Doe', location: 'Candigar', jobRole: 'Software Developer', 'image': 'https://images.unsplash.com/photo-1519456264917-42d0aa2e0625?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80' },
@@ -23,9 +23,22 @@ jobCandidate.innerHTML = `
 ${candidates.map(candidate => `
   <div class="card">
   <img class="card-imag" src=${candidate.image} alt="">
-    <h3>${candidate.name}</h3>
-    <h4>Jon Role : ${candidate.jobRole} </h4>
-    <h4>Location : ${candidate.location}</h4>
+  <div class="candidate-details">
+  <h3>${candidate.name}</h3>
+  <div class="candidate-first-details">
+  <p class="job-role">${candidate.jobRole} </p>
+  <p><i class="fa-sharp fa-solid fa-location-dot"></i> ${candidate.location}</p>
+  <p><i class="fa-sharp fa-solid fa-location-dot"></i> ${candidate.salary}</p>
+  </div>
+  <div class="candidate-second-details">
+  <p>Advertising</p>
+  <p>App</p>
+  <p>Job</p>
+  </div>
+  </div>
+  <button class="button" role="button"><span class="text">View Profile</span></button>
+  </div>
+  </div>
   </div>
 `).join('')}
 </div>
@@ -61,17 +74,21 @@ function displayCandidates(candidates) {
         candidates.forEach(candidate => {
             const candidateItem = document.createElement('div');
             candidateItem.innerHTML = `
-          <div class='search-candidate'>
-            <div class="search-card">
-            <div class="card-info">
-            <img class="search-card-imag" src=${candidate.image} alt="">
-             <h3>Name : ${candidate.name}</h3>
-             <h3>Job Role : ${candidate.jobRole} </h3>
-             <h3>Location : ${candidate.location}</h3>
+            <div class="card">
+            <img class="card-imag" src=${candidate.image} alt="">
+            <div class="candidate-details">
+            <h3>${candidate.name}</h3>
+            <div class="candidate-first-details">
+            <p>${candidate.jobRole} </p>
+            <p><i class="fa-sharp fa-solid fa-location-dot"></i> ${candidate.location}</p>
             </div>
-             <button class="button" role="button"><span class="text">Hire Candidate</span></button>
+            <div class="candidate-second-details">
             </div>
-          </div>
+            </div>
+            <button class="button" role="button"><span class="text">View Profile</span></button>
+            </div>
+            </div>
+            </div>
             `;
             candidateList.appendChild(candidateItem);
         });

@@ -63,51 +63,59 @@ button {
     margin-bottom: 10px;
 }
 
-
 .candidate {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 20px;
+    grid-template-columns: 1fr;
+    gap: 10px;
 }
 
 /* Card Section Styles */
 
 .card {
-    border: 1px solid #dec802;
-    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    padding: 10px;
     border-radius: 10px;
     cursor: pointer;
     transition: transform 0.4s ease-in-out;
     transform: translateX(-10px);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 .card:hover {
-    transform: translateY(-20px);
+    transform: translateY(-10px);
 }
 
 .card-imag {
-    width: 350px;
-    height: 350px;
-    border-radius: 5px;
-    margin: auto auto;
-}
-
-.search-card-imag {
     width: 60px;
     height: 60px;
-    border-radius: 5px;
+    border-radius: 50%;
 }
 
-.search-card {
+.candidate-details{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.candidate-first-details{
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    gap: 50px;
-    border: 1px solid #333;
-    padding: 20px;
-    border-radius: 10px;
-    margin-bottom: 30px;
-    margin-top: 60px;
+    gap: 10px;
+}
+
+.candidate-second-details{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-weight: 600;
+}
+
+.job-role{
+    color:brown;
+    font-weight: 300;
 }
 
 .card-info {
@@ -117,7 +125,7 @@ button {
 }
 
 .button {
-    background-color: #333;
+    background-color: #4681f4;
     border: 1px solid transparent;
     border-radius: .75rem;
     box-sizing: border-box;
@@ -138,7 +146,7 @@ button {
     user-select: none;
     -webkit-user-select: none;
     touch-action: manipulation;
-    width: auto;
+    width: 300px;
 }
 
 .button:hover {
