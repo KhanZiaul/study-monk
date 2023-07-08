@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Recruitment Solution - Candidate Search</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="login.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a class="nav-link" href="index.html" id="home">Home</a></li>
+                <li><a class="nav-link" href="candidates.html" id="candidates">Candidates</a></li>
+                <li><a class="nav-link" href="">Contact</a></li>
+                <li><a class="nav-link" href="login.html" id="login">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div id="login-container" class="login-container">
+        <div class="title">Login Now</div>
+        <div class="content">
+            <form action="#">
+                <div class="user-details">
+                    <div class="input-box">
+                        <span class="details">Email</span>
+                        <input type="text" placeholder="Enter your email" required>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Password</span>
+                        <input type="text" placeholder="Enter your password" required>
+                    </div>
+                </div>
+                <p id="login-link">New to Study Monk ? <span class="link">Register Now</span></p>
+              
+                <div class="button">
+                    <input type="submit" value="Login">
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div id="register-container" class="register-container">
+        <div class="title">Registration</div>
+        <div class="content">
+            <form action="#">
+                <div class="user-details">
+                    <div class="input-box">
+                        <span class="details">Full Name</span>
+                        <input type="text" placeholder="Enter your name" required>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Username</span>
+                        <input type="text" placeholder="Enter your username" required>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Email</span>
+                        <input type="text" placeholder="Enter your email" required>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Phone Number</span>
+                        <input type="text" placeholder="Enter your number" required>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Password</span>
+                        <input type="text" placeholder="Enter your password" required>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Confirm Password</span>
+                        <input type="text" placeholder="Confirm your password" required>
+                    </div>
+                    <p> Already have an account ? <span class="link">Login Now</span></p>
+                </div>
+                <div class="button">
+                    <input type="submit" value="Register">
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2023 Study Monk. All rights reserved.</p>
+    </footer>
+
+    <script src="./js/link.js"></script>
+    <script src="./js/loginRegister.js"></script>
+</body>
+
+</html>

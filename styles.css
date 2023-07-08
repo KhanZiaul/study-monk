@@ -1,3 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins',sans-serif;
+}
+
 header {
   background-color: #333;
   color: #fff;
@@ -96,11 +104,12 @@ footer {
   padding: 20px;
   border-radius: 10px;
   cursor: pointer;
-  transition: transform 0.2s ease-in-out;
+  transition: transform 0.4s ease-in-out;
+  transform: translateX(-10px);
 }
 
 .card:hover {
-  transform: translateY(10px);
+  transform: translateY(-20px);
 }
 
 .card-imag {

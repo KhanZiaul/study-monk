@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Recruitment Solution - Candidate Search</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a class="nav-link" href="index.html" id="home">Home</a></li>
+                <li><a class="nav-link" href="candidates.html" id="candidates">Candidates</a></li>
+                <li><a class="nav-link" href="">Contact</a></li>
+                <li><a class="nav-link" href="login.html" id="login">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="search">
+        <div class="search-form">
+            <input type="text" id="locationInput" placeholder="Location">
+            <input type="text" id="jobRoleInput" placeholder="Job Role">
+            <button id="searchButton" class="button" role="button"><span class="text">search</span></button>
+        </div>
+    </section>
+
+    <section class="listing">
+        <ul id="candidateList"></ul>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Study Monk. All rights reserved.</p>
+    </footer>
+
+    <script src="./js/candidates.js"></script>
+    <script src="./js/link.js"></script>
+</body>
+
+</html>
