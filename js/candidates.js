@@ -17,7 +17,6 @@ const candidates = [
 ];
 
 const jobCandidate = document.createElement('div');
-
 jobCandidate.innerHTML = `
 <div class='candidate'>
 ${candidates.map(candidate => `

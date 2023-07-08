@@ -185,11 +185,28 @@ button {
     }
 }
 
+
 @media screen and (max-width:768px) {
+
+    .search {
+        padding: 20px;
+        margin-bottom: 20px;
+    }
+    
+    .listing {
+        padding: 20px;
+    }
+
+    .card {
+        display: grid;
+        grid-template-columns: 1fr;
+        align-items: start;
+        margin-left: 5px;
+        margin-bottom: 25px;
+    }
 
     .candidate {
         grid-template-columns: 1fr;
-        gap: 20px;
     }
 
     .candidate-details {
@@ -248,14 +265,6 @@ button {
 
     #jobRoleInput {
         width: 100%;
-    }
-
-    .card {
-        grid-template-columns: 1fr;
-        width: 100%;
-        margin-left: 2px;
-        margin-right: 2px;
-        gap: 20px;
     }
 
     .candidate-first-details {
