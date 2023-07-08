@@ -17,7 +17,7 @@ header {
   padding: 15px 0;
 }
 
-nav{
+nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -142,7 +142,7 @@ footer a {
   padding: 5px 0;
 }
 
-@media only screen and (max-width: 749px) {
+@media screen and (max-width:768px) {
   .main-footer {
     padding: 20px;
     display: grid;
@@ -152,6 +152,11 @@ footer a {
   .info {
     padding: 20px 0;
   }
+
+  nav {
+    flex-direction: column;
+  }
+  
 }
 
 @media (max-width: 480px) {
