@@ -29,8 +29,8 @@
 
 /* Register */
 
-
 .register-container {
+    display: none;
     max-width: 700px;
     width: 100%;
     background-color: #fff;
