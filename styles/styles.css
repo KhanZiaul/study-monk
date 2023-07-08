@@ -58,6 +58,93 @@ nav ul li a.active {
   cursor: pointer;
 }
 
+/* Hero Section Styles */
+
+.hero {
+  background-image: url('https://images.unsplash.com/photo-1529400971008-f566de0e6dfc?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80');
+  background-size: cover;
+  background-position: center;
+  height: 400px;
+  display: flex;
+  align-items: center;
+}
+
+.hero-content {
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 14px;
+  margin-bottom: 30px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.features {
+  background-color: #f1f1f1;
+  padding: 50px 0;
+  text-align: center;
+}
+
+.features h2 {
+  font-size: 28px;
+  margin-bottom: 30px;
+}
+
+.feature {
+  margin-bottom: 30px;
+}
+
+.feature i {
+  font-size: 40px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.feature h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.feature p {
+  font-size: 16px;
+}
+
+/* Benefits Section Styles */
+.benefits {
+  padding: 50px 0;
+  text-align: center;
+}
+
+.benefits h2 {
+  font-size: 28px;
+  margin-bottom: 30px;
+}
+
+.benefits ul {
+  list-style: disc;
+  margin: 0 auto;
+  max-width: 600px;
+  text-align: left;
+}
+
+.benefits li {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
 /* footer */
 
 .main-footer {
@@ -156,7 +243,7 @@ footer a {
   nav {
     flex-direction: column;
   }
-  
+
 }
 
 @media (max-width: 480px) {
